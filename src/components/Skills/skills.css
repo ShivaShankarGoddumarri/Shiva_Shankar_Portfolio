@@ -1,0 +1,17 @@
+.sItem:hover .sImage{
+   transform: scale(1.2) rotate(360deg);
+   animation:  rotate 1s linear forwards;
+   -webkit-animation:  rotate 1s linear forwards;
+   -webkit-transform: scale(1.2) rotate(360deg);
+   -moz-transform: scale(1.2) rotate(360deg);
+   -ms-transform: scale(1.2) rotate(360deg);
+   -o-transform: scale(1.2) rotate(360deg);
+}
+@keyframes  rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
