@@ -1,7 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { education, experiences } from '../../data/constants';
+import { education } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
 
 
@@ -14,7 +14,7 @@ const Container = styled.div`
     align-items: center;
     padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 0 0 100px 0;
     }
 `;
 
@@ -55,8 +55,8 @@ margin-top: 20px;
 
 const index = () => {
     return (
-        <Container id="education">
-            <Wrapper>
+        <Container id="education" >
+            <Wrapper >
                 <Title>Education</Title>
                
                         {education.map((education,index) => (
@@ -66,6 +66,7 @@ const index = () => {
                         )
                         )
                         }
+                        
             </Wrapper>
         </Container>
     )

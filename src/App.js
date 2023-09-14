@@ -38,10 +38,8 @@ function App() {
 useEffect(() => {
   const images=document.getElementsByClassName("sImage")
   for(let i=0;i<images.length;i++){
-   images[i].style.transform="rotate(360deg)"
+   images[i].style.transform="rotate(360deg)" 
   }
-  
-
    },[])
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -52,7 +50,6 @@ useEffect(() => {
         <Navbar />
         <Body>
           <HeroSection />
-          
           <Wrapper >
             <Skills />
             <Experience />

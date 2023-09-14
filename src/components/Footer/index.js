@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 
 
@@ -33,6 +35,11 @@ const Logo = styled.h1`
     color: white;
     
    
+  }
+   @media (max-width: 960px) {
+    justify-content: center;
+    padding: 0 0px;
+    font-size: 25px;
   }
 `;
 
@@ -71,6 +78,9 @@ const NavLink = styled.a`
   }
   @media (max-width: 768px) {
     font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
   }
 `;
 
@@ -105,7 +115,9 @@ function Footer() {
           <SocialMediaIcon href= "mailto:ss3177806@gmail.com" target="display"><EmailIcon/></SocialMediaIcon>
           <SocialMediaIcon href= "http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196" target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href= "https://www.instagram.com/shiva_shankar__goddumarri/" target="display"><InstagramIcon /></SocialMediaIcon>
-          
+          <SocialMediaIcon href= "tel:+91 8341943656" target="display"><PhoneIcon/></SocialMediaIcon>
+          <SocialMediaIcon href= "https://wa.me/8341943656" target="display"><WhatsAppIcon /></SocialMediaIcon>
+         
         </SocialMediaIcons>
        
         <Nav>

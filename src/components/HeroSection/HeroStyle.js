@@ -20,6 +20,98 @@ export const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
+
+
+const spinInAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+
+const spinOutAnimation = keyframes`
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+`;
+
+
+export const SocialMediaIcons = styled.div`
+  display: flex;
+  gap: 15px;
+  padding: 0 0 30px 18px ;
+  @media (max-width: 960px) {
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+  
+`;
+
+
+
+// Define the keyframes for the ripple animation
+const ripple = keyframes`
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+`;
+
+export const SocialMediaIcon = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: ${({ theme }) => theme.primary};
+  border-radius: 50%;
+  color: ${({ theme }) => theme.white};
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden; /* Hide overflowing ripple */
+  position: relative; /* Create a stacking context */
+  transition: background-color 0.3s ease-in-out;
+  
+  
+
+  /* Add a pseudo-element for the ripple effect */
+  &::before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle, transparent 1%, ${({ theme }) => theme.primary} 1%);
+    background-size: 150% 150%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  &:hover::before {
+    animation: ${ripple} 0.5s linear;
+    
+  }
+  
+  &:hover {
+    transform: scale(1.2) rotate(360deg); /* Scale up and rotate 360 degrees on hover */
+    animation: ${spinInAnimation} 1s linear forwards; /* Apply the spin in animation */
+  }
+
+  &:not(:hover) {
+    animation: ${spinOutAnimation} 1s linear forwards; /* Apply the spin out animation */
+  }
+  
+`;
+
+
 export const HeroBg = styled.div`
   position: absolute;
   display: flex;
@@ -54,6 +146,7 @@ export const HeroInnerContainer = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding: 150px 0 0 0;
   }
 `;
 export const HeroLeftContainer = styled.div`

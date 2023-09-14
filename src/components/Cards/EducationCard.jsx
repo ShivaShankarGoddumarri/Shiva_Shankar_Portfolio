@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
+
 const Document = styled.img`
     display: none;
     height: 70px;
@@ -133,9 +134,9 @@ const Grade = styled.div`
 
 const EducationCard = ({ education }) => {
     return (
-        <Card>
+        <Card >
             <Top>
-                {/* ... */}
+              
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
