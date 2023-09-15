@@ -223,4 +223,21 @@ export const projects = [
   },
   
   
+  {
+    id: 1,
+    title: "Amazon Clone",
+    date: "Aug 2023",
+    description:
+      "Amazon Clone is a web application designed to enhance my Frontend knowledge by cloning the Amazon Frontend",
+    image:
+      "",
+    tags: [
+      "HTML",
+      "CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Amazon-Clone",
+    webapp: "https://amazon-clone-pi-ten.vercel.app/",
+  },
+
 ];

@@ -20,7 +20,7 @@ const Description = styled.div`
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 10px;
     }
     &:hover{
         color: white;
@@ -173,8 +173,16 @@ const Skills = styled.div`
     display: flex;
     gap: 12px;
     margin-top: -10px;
+    
+    
     &:hover{
         color: white;
+    }
+
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+        padding: 0 100px 0 0;
+        display: flex;
     }
 `
 
@@ -187,13 +195,15 @@ const ItemWrapper = styled.div`
 const Skill = styled.div`
     font-size: 15px;
     font-weight: 400;
+    
     &:hover{
         color: white;
     }
     
     color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 10px;
+        padding: 2px 0 0 2px;
     }
 `
 
@@ -219,7 +229,7 @@ const ExperienceCard = ({ experience }) => {
                     <>
                         <br />
                         <Skills>
-                            <b>Skills :</b>
+                           <b>Skills:</b> 
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
                                     <Skill> • {skill}</Skill>
