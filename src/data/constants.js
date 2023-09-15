@@ -210,7 +210,7 @@ export const projects = [
     description:
       "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
     image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      "https://github.com/ShivaShankarGoddumarri/Enigma-2k22/blob/main/Enigma-2K22.png",
     tags: [
       "HTML",
       "CSS",
