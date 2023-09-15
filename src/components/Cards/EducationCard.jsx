@@ -47,6 +47,7 @@ const Card = styled.div`
         padding: 10px;
         gap: 8px;
         width: 300px;
+        border: 0.1px solid #854CE6;
     }
 
     &:hover ${Document}{
@@ -66,6 +67,7 @@ const Card = styled.div`
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
         border: 0.1px solid #854CE6;
      
+
     }
 `
 

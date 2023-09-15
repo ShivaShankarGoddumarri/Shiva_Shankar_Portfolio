@@ -38,6 +38,7 @@ font-size: 55px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
+padding: 12px 0 0 0;
 &:hover{
    color:  ${({ theme }) => theme.primary};
    transition: transform 0.9s ease-in-out;

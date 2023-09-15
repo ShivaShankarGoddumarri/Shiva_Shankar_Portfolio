@@ -56,6 +56,7 @@ const Card = styled.div`
         padding: 10px;
         gap: 8px;
         width: 300px;
+        border: 0.1px solid #854CE6;
     }
 
     &:hover ${Document}{

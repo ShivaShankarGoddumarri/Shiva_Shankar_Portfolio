@@ -205,12 +205,12 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Enigma-2K22",
+    title: "Enigma 2K22",
     date: "Dec 2021 - Jan 2022",
     description:
       "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
     image:
-      "https://github.com/ShivaShankarGoddumarri/Enigma-2k22/blob/main/Enigma-2K22.png",
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png",
     tags: [
       "HTML",
       "CSS",
@@ -230,7 +230,7 @@ export const projects = [
     description:
       "Amazon Clone is a web application designed to enhance my Frontend knowledge by cloning the Amazon Frontend",
     image:
-      "",
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/8b34a415-7476-4edc-8aa8-3033d0cd308c",
     tags: [
       "HTML",
       "CSS",
@@ -238,6 +238,40 @@ export const projects = [
     category: "web app",
     github: "https://github.com/ShivaShankarGoddumarri/Amazon-Clone",
     webapp: "https://amazon-clone-pi-ten.vercel.app/",
+  },
+
+  {
+    id: 2,
+    title: "Facebook Login Page Clone",
+    date: "Aug 2023",
+    description:
+      "Facebook Login Page is a web application  designed to enhance my Frontend knowledge by cloning the  Facebook Login Page Website",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/1a93241f-7e84-4988-86ea-361356034607",
+    tags: [
+      "HTML",
+      "CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Facebook-LoginPage-Clone",
+    webapp: "https://facebook-login-page-clone-theta.vercel.app/",
+  },
+
+  {
+    id: 3,
+    title: "Instagram Login Page Clone",
+    date: "Aug 2023",
+    description:
+      "Instagram Login Page is a web application  designed to enhance my Frontend knowledge by cloning the Instagram Login Page Website",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/9f61a019-652f-4fa2-8bb9-a40badf00699",
+    tags: [
+      "HTML",
+      "CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Instagram-LoginPage-Clone",
+    webapp: "https://instagram-login-page-clone-three.vercel.app/",
   },
 
 ];
