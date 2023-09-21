@@ -39,6 +39,7 @@ const Card = styled.div`
     flex-direction: column;
     gap: 12px;
     transition: all 0.3s ease-in-out;
+    
     &:hover{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
@@ -99,13 +100,12 @@ const Name = styled.div`
 const Degree = styled.div`
     font-size: 20px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: white;
+   
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
-    &:hover{
-        color: white;
-    } 
+   
 `
 
 const Date = styled.div`
@@ -134,9 +134,9 @@ const Grade = styled.div`
 
 
 
-const EducationCard = ({ education }) => {
+const EducationCard = ({ education, index }) => {
     return (
-        <Card >
+        <Card>
             <Top>
               
                 <Body>

@@ -147,13 +147,11 @@ const Role = styled.div`
 const Company = styled.div`
     font-size: 16px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: white;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
-    &:hover{
-        color: white;
-    }
+   
 `
 
 const Date = styled.div`
