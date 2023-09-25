@@ -219,6 +219,24 @@ export const projects = [
   
   {
     id: 1,
+    title: "Dr. Medicine",
+    date: "September 2023",
+    description:
+      "Dr. Medicine is a web application, used to check the symptoms and get an advisable medicine who can cure their symptoms with specific medicine",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/a65797ce-63e4-485a-84a9-04172f29085d",
+    tags: [
+      "HTML",
+      "CSS",
+      "Java Script"
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Dr.Medicine",
+    webapp: "https://dr-medicine-adviser.vercel.app/",
+  },
+
+  {
+    id: 2,
     title: "Amazon Clone",
     date: "Aug 2023",
     description:
@@ -233,6 +251,8 @@ export const projects = [
     github: "https://github.com/ShivaShankarGoddumarri/Amazon-Clone",
     webapp: "https://amazon-clone-pi-ten.vercel.app/",
   },
+
+
 
  
 ];
