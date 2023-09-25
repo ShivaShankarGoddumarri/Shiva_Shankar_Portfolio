@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled,{ keyframes } from 'styled-components'
 
 
 
@@ -32,10 +32,57 @@ const Branch = styled.div`
     color: ${({ theme }) => theme.text_secondary + 80};
    
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 10px;
     }
 `
-// Grade
+// Define a keyframes animation for spinning
+const spinInAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+const spinOutAnimation = keyframes`
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+`;
+// Styled components for styling the gear icon and defining the spin animation
+const GearIcon1 = styled.img`
+  width: 30px; // Adjust the width and height as needed
+  height: 30px;
+  margin-right: 5px; // Add some spacing between the gear icon and the Branch text
+  transition: transform 0.2s;
+  &:not(:hover) {
+    animation: ${spinInAnimation} 3s linear alternate; 
+  }
+  @media only screen and (max-width: 768px) {
+    height: 15px;
+    width: 15px;
+  }
+`;
+
+const GearIcon2 = styled.img`
+  width: 20px; // Adjust the width and height as needed
+  height: 20px;
+  margin-right: 5px; // Add some spacing between the gear icon and the Branch text
+  transition: transform 0.2s;
+  margin-left: -8px;
+  
+  &:not(:hover) {
+    animation: ${spinOutAnimation} 3s linear alternate; 
+  }
+  @media only screen and (max-width: 768px) {
+    height: 10px;
+    width: 10px;
+  }
+`;
+
 const Card = styled.div`
     width: 750px;
     border-radius: 10px;
@@ -85,6 +132,16 @@ const Card = styled.div`
     ${Branch} {
         color: white;
     }
+    ${GearIcon1}{
+            transform: scale(1.2) rotate(360deg);
+            animation: ${spinInAnimation} 1s linear alternate; 
+            
+        }
+        ${GearIcon2}{
+            transform: scale(1.2) rotate(360deg);
+            animation: ${spinOutAnimation} 1s linear alternate; 
+            
+        }
 
     } 
 `
@@ -108,11 +165,12 @@ const Body = styled.div`
 const Name = styled.div`
     font-size: 25px;
     font-weight: 600;
-    color:  ${({ theme }) => theme.primary};
-    @media only screen and (max-width: 768px){
+    color: ${({ theme }) => theme.primary};
+    transition: all 0.4s ease-in-out;
+    @media only screen and (max-width: 768px) {
         font-size: 14px;
     }
-`
+`;
 
 const Degree = styled.div`
     font-size: 25px;
@@ -139,23 +197,21 @@ const Date = styled.div`
 
 
 const EducationCard = ({ education, index }) => {
-    return (
-        <Card>
-            <Top>
-              
-                <Body>
-                    <Name>{education.school}</Name>
-                    <Degree>{education.degree}</Degree>
-                    <Branch>{education.branch}</Branch>
-                    <Date>{education.date}</Date>
-                  
-                </Body>
-                
-            </Top>
-           
-        </Card>
-    );
+  return (
+      <Card>
+          <Top>
+              <Body>
+                  <Name>{education.school}</Name>
+                  <Degree>{education.degree}</Degree>
+                  <div>
+                      
+                      <Branch><GearIcon1 src="gear.png" alt="Gear Icon"  style={{ animationIterationCount: 'infinite' }} /><GearIcon2 src="gear.png" alt="Gear Icon"   style={{ animationIterationCount: 'infinite' }} />{education.branch}</Branch>
+                  </div>
+                  <Date>{education.date}</Date>
+              </Body>
+          </Top>
+      </Card>
+  );
 };
 
-
-export default EducationCard
+export default EducationCard;

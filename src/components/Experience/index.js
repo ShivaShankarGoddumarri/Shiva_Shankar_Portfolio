@@ -13,7 +13,7 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     height: 90vh;
-    padding: 40px 0px 80px 0px;
+    padding: 40px 0px 0px 0px;
     @media (max-width: 960px) {
         padding: 0px;
     }
@@ -28,6 +28,7 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 1350px;
     padding: 80px 0;
+   
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
