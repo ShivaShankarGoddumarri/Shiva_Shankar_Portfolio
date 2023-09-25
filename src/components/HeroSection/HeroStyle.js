@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import _default from "../../themes/default";
 
-
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   
@@ -20,6 +19,20 @@ export const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
+const h1 = styled.div`
+  font-size: 42px; 
+  text-align: center;
+  font-weight: 600;
+  padding: 70px 0 20px 0;
+  margin-top: 50px; 
+  color: white; 
+
+  @media (max-width: 768px) {
+    margin-top: 20px; 
+    font-size: 24px; 
+    padding: 300px 0 0 0; 
+  }
+`;
 
 
 const spinInAnimation = keyframes`
@@ -305,4 +318,6 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 `;
+
+
 

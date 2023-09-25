@@ -16,6 +16,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 const HeroSection = () => {
     return (
         <div id="about" style={{height:"100vh"}}>
+        <h1>ABOUT</h1>
             <HeroContainer>
                 <HeroBg>
                     <HeroBgAnimation />

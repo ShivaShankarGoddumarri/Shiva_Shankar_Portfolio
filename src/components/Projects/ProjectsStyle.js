@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import _default from '../../themes/default';
 
+
+
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
     display: flex;
@@ -37,10 +39,6 @@ margin-top: 80px;
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
-  }
-  &:hover{
-   color:  ${({ theme }) => theme.primary};
-   transition: transform 0.9s ease-in-out;
   }
 `;
 

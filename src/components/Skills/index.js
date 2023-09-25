@@ -38,16 +38,13 @@ const Title = styled.div`
   padding: 70px 0 20px 0;
   margin-top: 50px; /* Decreased the margin-top */
   color: ${({ theme }) => theme.text_primary};
+
   @media (max-width: 768px) {
     margin-top: 20px; /* Decreased the margin-top */
     font-size: 24px; /* Decreased the font size */
     padding: 300px 0 0 0;
     
     
-  }
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-    transition: transform 0.9s ease-in-out;
   }
 `;
 
@@ -71,29 +68,6 @@ const SkillsContainer = styled.div`
   }
 `;
 
-const Skill = styled.div`
-  width: 100%;
-  max-width: 400px; /* Decreased the max-width */
-  background: ${({ theme }) => theme.card};
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 12px; /* Decreased the border radius */
-  padding: 16px 24px; /* Adjusted padding */
-  transition: transform 0.2s ease;
-  &:hover {
-    transform: scale(1.05);
-    border: 1px solid #854CE6;
-  }
-  @media (max-width: 768px) {
-    max-width: 300px; /* Decreased the max-width */
-    padding: 10px 24px; /* Adjusted padding */
-    border: 1px solid #854CE6;
-  }
-  @media (max-width: 500px) {
-    max-width: 250px; /* Decreased the max-width */
-    padding: 10px 20px; /* Adjusted padding */
-    border: 1px solid #854CE6;
-  }
-`;
 
 const SkillTitle = styled.h2`
   font-size: 24px; /* Decreased the font size */
@@ -101,45 +75,6 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 16px; /* Decreased the margin-bottom */
   text-align: center;
-  &:hover {
-    color: white;
-  }
-`;
-
-const SkillList = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px; /* Decreased the gap */
-  margin-bottom: 16px; /* Decreased the margin-bottom */
-`;
-
-const SkillItem = styled.div`
-  font-size: 14px; /* Decreased the font size */
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 10px; /* Decreased the border radius */
-  padding: 8px 12px; /* Adjusted padding */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px; /* Decreased the gap */
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-  &:hover {
-    background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
-    border-color: rgb(133, 76, 230);
-    color: white;
-    transform: scale(1.1) rotate(-15deg);
-  }
-  @media (max-width: 768px) {
-    font-size: 12px; /* Decreased the font size */
-    padding: 6px 10px; /* Adjusted padding */
-  }
-  @media (max-width: 500px) {
-    font-size: 12px; /* Decreased the font size */
-    padding: 4px 10px; /* Adjusted padding */
-  }
 `;
 
 const spinInAnimation = keyframes`
@@ -164,20 +99,97 @@ const SkillImage = styled.img`
   width: 20px; /* Decreased the width */
   height: 20px; /* Decreased the height */
   transition: transform 0.2s;
-  &:hover {
-    transform: scale(1.2) rotate(360deg);
-    animation: ${spinInAnimation} 1s linear forwards;
-  }
+  
   &:not(:hover) {
     animation: ${spinOutAnimation} 1s linear forwards;
   }
 `;
 
+
+const SkillItem = styled.div`
+  font-size: 14px; /* Decreased the font size */
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border-radius: 10px; /* Decreased the border radius */
+  padding: 8px 12px; /* Adjusted padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* Decreased the gap */
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  @media (max-width: 768px) {
+    font-size: 12px; /* Decreased the font size */
+    padding: 6px 10px; /* Adjusted padding */
+  }
+  @media (max-width: 500px) {
+    font-size: 12px; /* Decreased the font size */
+    padding: 4px 10px; /* Adjusted padding */
+  }
+
+`;
+
+
+
+
+const Skill = styled.div`
+  width: 100%;
+  max-width: 400px; 
+  background: ${({ theme }) => theme.card};
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border-radius: 12px; 
+  padding: 16px 24px; 
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.05);
+    border: 1px solid #854CE6;
+
+    ${SkillTitle}{
+      color: white;
+    }
+    ${SkillImage}{
+      transform: scale(1.2) rotate(360deg);
+      animation: ${spinInAnimation} 1s linear forwards;
+    }
+    ${SkillItem}{
+      background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+      border-color: rgb(133, 76, 230);
+      color: white;
+    }
+    
+
+  }
+  @media (max-width: 768px) {
+    max-width: 300px; 
+    padding: 10px 24px; 
+    border: 1px solid #854CE6;
+    
+  }
+  @media (max-width: 500px) {
+    max-width: 250px; 
+    padding: 10px 20px; 
+    border: 1px solid #854CE6;
+  }
+`;
+
+
+const SkillList = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px; /* Decreased the gap */
+  margin-bottom: 16px; /* Decreased the margin-bottom */
+`;
+
+
+
+
+
 const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title>SKILLS</Title>
         <SkillsContainer>
           {skills.map((skill, index) => (
             <Skill data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}>

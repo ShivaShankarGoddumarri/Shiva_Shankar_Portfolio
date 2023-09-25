@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 
 
+
+
 const Document = styled.img`
     display: none;
     height: 70px;
@@ -15,9 +17,6 @@ const Document = styled.img`
     }
 
 `
-
-
-//
 const Span = styled.span`
 overflow: hidden;
 display: -webkit-box;
@@ -26,9 +25,19 @@ max-width: 100%;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `
+
+const Branch = styled.div`
+    font-size: 20px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary + 80};
+   
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+`
 // Grade
 const Card = styled.div`
-    width: 650px;
+    width: 750px;
     border-radius: 10px;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     padding: 12px 16px;
@@ -70,6 +79,14 @@ const Card = styled.div`
      
 
     }
+
+    &:hover {
+
+    ${Branch} {
+        color: white;
+    }
+
+    } 
 `
 
 const Top = styled.div`
@@ -98,7 +115,7 @@ const Name = styled.div`
 `
 
 const Degree = styled.div`
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     color: white;
    
@@ -108,6 +125,7 @@ const Degree = styled.div`
    
 `
 
+
 const Date = styled.div`
     font-size: 15px;
     font-weight: 400;
@@ -115,21 +133,7 @@ const Date = styled.div`
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
-    &:hover{
-        color: white;
-    } 
-`
-
-const Grade = styled.div`
-    font-size: 13px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-    &:hover{
-        color: white;
-    } 
+    
 `
 
 
@@ -142,11 +146,13 @@ const EducationCard = ({ education, index }) => {
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
+                    <Branch>{education.branch}</Branch>
                     <Date>{education.date}</Date>
+                  
                 </Body>
                 
             </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
+           
         </Card>
     );
 };

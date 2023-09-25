@@ -11,7 +11,7 @@ const Projects = ({openModal,setOpenModal}) => {
   return (
     <Container id="projects">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>PROJECTS</Title>
         
         <ToggleButtonGroup >
           {toggle === 'all' ?

@@ -38,17 +38,13 @@ const Title = styled.div`
 font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 30px;
+padding: 5px 0 60px 0;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
   }
-  &:hover{
-    color:  ${({ theme }) => theme.primary};
-    transition: all 0.8s ease-in-out;
-  }
-  
 `;
 
 
@@ -61,13 +57,9 @@ const index = () => {
     return (
         <Container id="experience">
             <Wrapper>
-                <Title>Experience</Title>
-               
-                
+                <Title>EXPERIENCE</Title>
                         {experiences.map((experience,index) => (
-                           
                                     <ExperienceCard experience={experience}/>
-                            
                         ))}
                    
             </Wrapper>

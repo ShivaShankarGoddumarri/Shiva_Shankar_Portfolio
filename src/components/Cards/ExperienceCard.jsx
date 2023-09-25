@@ -22,9 +22,6 @@ const Description = styled.div`
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
-    &:hover{
-        color: white;
-    }
 `
 
 const Span = styled.span`
@@ -35,12 +32,71 @@ max-width: 100%;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `
+const Skills = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: -10px;
 
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+        padding: 0 100px 0 0;
+        display: flex;
+    }
+`
+const Skill = styled.div`
+    font-size: 15px;
+    font-weight: 400;
+    
+    
+    color: ${({ theme }) => theme.text_primary + 99};
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+        padding: 2px 0 0 2px;
+    }
+`
+// Define a keyframes animation for spinning
+const spinInAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+// Define a keyframes animation for spinning out
+const spinOutAnimation = keyframes`
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+`;
+
+const Image = styled.img`
+  height: 50px;
+  background-color: #000;
+  border-radius: 10px;
+  margin-top: 4px;
+  transition: transform 0.2s; /* Add a smooth transition for scaling */
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
+
+
+  &:not(:hover) {
+    animation: ${spinOutAnimation} 1s linear forwards; /* Apply the spin out animation */
+  }
+
+`;
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
+    padding: 12px 16px ;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -76,6 +132,19 @@ const Card = styled.div`
        border: 0.1px solid #854CE6;
    }
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+
+    &:hover{
+        ${Description}{
+            color: white
+        }
+        ${Skill}{
+            color: white
+        }
+        ${Image}{
+            transform: scale(1.2) rotate(360deg); /* Scale up and rotate 360 degrees on hover */
+            animation: ${spinInAnimation} 1s linear forwards; /* Apply the spin in animation */
+        }
+    }
 `
 
 const Top = styled.div`
@@ -85,46 +154,7 @@ const Top = styled.div`
 `
 
 
-// Define a keyframes animation for spinning
-const spinInAnimation = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-`;
 
-// Define a keyframes animation for spinning out
-const spinOutAnimation = keyframes`
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-`;
-
-const Image = styled.img`
-  height: 50px;
-  background-color: #000;
-  border-radius: 10px;
-  margin-top: 4px;
-  transition: transform 0.2s; /* Add a smooth transition for scaling */
-
-  @media only screen and (max-width: 768px) {
-    height: 40px;
-  }
-
-  &:hover {
-    transform: scale(1.2) rotate(360deg); /* Scale up and rotate 360 degrees on hover */
-    animation: ${spinInAnimation} 1s linear forwards; /* Apply the spin in animation */
-  }
-
-  &:not(:hover) {
-    animation: ${spinOutAnimation} 1s linear forwards; /* Apply the spin out animation */
-  }
-`;
 
 
 const Body = styled.div`
@@ -136,7 +166,7 @@ const Body = styled.div`
 
 
 const Role = styled.div`
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color:  ${({ theme }) => theme.primary};
     @media only screen and (max-width: 768px){
@@ -161,50 +191,19 @@ const Date = styled.div`
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
-    &:hover{
-        color: white;
-    }
 `
 
 
-const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: -10px;
-    
-    
-    &:hover{
-        color: white;
-    }
 
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-        padding: 0 100px 0 0;
-        display: flex;
-    }
-`
 
 const ItemWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    
 `
 
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    
-    &:hover{
-        color: white;
-    }
-    
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-        padding: 2px 0 0 2px;
-    }
-`
+
 
 
 

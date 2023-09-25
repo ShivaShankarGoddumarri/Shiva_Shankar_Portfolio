@@ -127,7 +127,7 @@ export const skills = [
       {
         name: "Canva",
         image:
-          "https://assets.stickpng.com/images/62b1fefc8309c32ce1623ded.png",
+          "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/846dceab-7768-4811-b13f-c27456e5323e",
       },
 
       {
@@ -172,27 +172,27 @@ export const education = [
     id: 0,
    
     school: "Jawaharlal Nehru Technological University, Anantapur",
-    date: "Jun 2018 - Jul 2022",
-    grade: "7.6 CGPA",
+    date: "June 2018 - July 2022",
     degree: "Bachelor of Technology",
-    branch: "Electronics and Communication Engineering",
+    branch: "Electronics and Communication Engineering"
   },
      
   {
     id: 1,
    
     school: "Sri Sai Krupa Junior College, Dharmavaram",
-    date: "Mar 2016 - Mar 2018",
-    grade: "80.4%",
-    degree: "Intermediate, MPC",
+    date: "March 2016 - March 2018",
+    degree: "Intermediate",
+    branch: "MPC"
+
   },
   {
     id: 2,
     
     school: "Sri Gayathri English Medium High School, Dharmavaram",
-    date: "Mar 2015 - Mar 2016",
-    grade: "8.3%",
-    degree: "SSC",
+    date: "March 2015 - March 2016",
+    degree: "Class X",
+    branch: "SSC"
   },
 ];
 
@@ -217,7 +217,6 @@ export const projects = [
     webapp: "https://enigma-2k22.vercel.app/",
   },
   
-  
   {
     id: 1,
     title: "Amazon Clone",
@@ -235,38 +234,5 @@ export const projects = [
     webapp: "https://amazon-clone-pi-ten.vercel.app/",
   },
 
-  {
-    id: 2,
-    title: "Facebook Login Page Clone",
-    date: "Aug 2023",
-    description:
-      "Facebook Login Page is a web application  designed to enhance my Frontend knowledge by cloning the  Facebook Login Page Website",
-    image:
-      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/1a93241f-7e84-4988-86ea-361356034607",
-    tags: [
-      "HTML",
-      "CSS",
-    ],
-    category: "web app",
-    github: "https://github.com/ShivaShankarGoddumarri/Facebook-LoginPage-Clone",
-    webapp: "https://facebook-login-page-clone-theta.vercel.app/",
-  },
-
-  {
-    id: 3,
-    title: "Instagram Login Page Clone",
-    date: "Aug 2023",
-    description:
-      "Instagram Login Page is a web application  designed to enhance my Frontend knowledge by cloning the Instagram Login Page Website",
-    image:
-      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/9f61a019-652f-4fa2-8bb9-a40badf00699",
-    tags: [
-      "HTML",
-      "CSS",
-    ],
-    category: "web app",
-    github: "https://github.com/ShivaShankarGoddumarri/Instagram-LoginPage-Clone",
-    webapp: "https://instagram-login-page-clone-three.vercel.app/",
-  },
-
+ 
 ];
