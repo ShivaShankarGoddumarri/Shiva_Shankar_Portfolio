@@ -120,7 +120,8 @@ const CloseButton = styled.button`
     /* Adjust styles for smaller screens (e.g., Redmi Note 9) */
     right: 10px;
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 600px;
+    margin-right: 5px;
   }
 `;
 
