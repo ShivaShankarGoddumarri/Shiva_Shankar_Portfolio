@@ -9,9 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges with a passion for learning. Iam dedicated to delivering high-quality results with a positive attitude and a growth mindset, Iam ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/ShivaShankarGoddumarri",
-  // resume: "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/6ea6dd8e-ba8d-431a-a993-2c801e8fd091",
-  linkedin: "http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196",
-  insta: "https://www.instagram.com/shiva_shankar__goddumarri/",
+
   
 };
 
