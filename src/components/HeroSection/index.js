@@ -11,7 +11,6 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import styled, { keyframes } from 'styled-components';
 
-
 const slideInFromBottom = keyframes`
   from {
     transform: translateY(100%);
@@ -30,22 +29,18 @@ const slideOutToTop = keyframes`
   }
 `;
 
-//  styled components for the resume modal
-const ResumeModalContainer = styled.div`
+const BlurOverlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 75%;
+  width: 100%;
   height: 100%;
-  padding: 15px 0 0 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+  z-index: 9998; /* Make sure it's below the modal but above the content */
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s, visibility 2s;
-
 
   &.open {
     animation: ${slideInFromBottom} 1s ease-in-out;
@@ -58,12 +53,39 @@ const ResumeModalContainer = styled.div`
     opacity: 0;
     visibility: hidden;
   }
+`;
+
+const ResumeModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  padding: 0 0 0 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+
+  &.open {
+    animation: ${slideInFromBottom} 1s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.close {
+    animation: ${slideOutToTop} 3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens (e.g., Redmi Note 9) */
     width: 100%;
     padding: 15px;
   }
-
 `;
 
 const ResumeModalContent = styled.div`
@@ -77,8 +99,8 @@ const ResumeModalContent = styled.div`
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: relative;
+
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens (e.g., Redmi Note 9) */
     max-width: 100%;
     max-height: 100%;
   }
@@ -92,8 +114,8 @@ const ResumeModalImage = styled.img`
   display: block;
   margin: 0 auto;
   object-fit: contain;
+
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens (e.g., Redmi Note 9) */
     max-width: 100%;
     max-height: 100%;
   }
@@ -101,30 +123,40 @@ const ResumeModalImage = styled.img`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 30px;
-  right: -35px;
-  background: transparent;
-  border: border-box;
-  font-size: 20px;
-  font-weight: bold;
+  top: 20px; /* Move the button to the top */
+  right: -70px; /* Adjust the right position */
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding for a smaller button */
+  color: ${({ theme }) => theme.white};
+  border-radius: 10px; /* Reduce border-radius for a smaller button */
   cursor: pointer;
-  color: white;
-  transition: transform 0.2s ease-in-out; /* Add a transition for a smooth hover effect */
+  font-size: 14px; /* Reduce the font size */
+  font-weight: 600;
+  transition: all 0.3s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2), -10px -10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 
   &:hover {
-    transform: scale(1.1); /* Scale the button slightly on hover */
-    color: ${({ theme }) => theme.primary};
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 30px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(225deg, hsla(271, 100%, 60%, 1) 0%, hsla(294, 100%, 60%, 1) 100%);
+    filter: brightness(1.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
   }
-
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens (e.g., Redmi Note 9) */
     right: 10px;
     font-size: 16px;
     margin-top: 650px;
     margin-right: 5px;
   }
 `;
-
 
 const HeroSection = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
@@ -194,11 +226,10 @@ const HeroSection = () => {
       </HeroContainer>
 
       {/* Resume Modal */}
+      <BlurOverlay className={isResumeModalOpen ? 'open' : 'close'} />
       <ResumeModalContainer className={isResumeModalOpen ? 'open' : 'close'}>
         <ResumeModalContent>
-          {/* Add the content for your resume here */}
           <ResumeModalImage src="Resume.jpg" alt="Resume" />
-          
         </ResumeModalContent>
         <CloseButton onClick={closeResumeModal}>Close</CloseButton>
       </ResumeModalContainer>
