@@ -154,7 +154,7 @@ const CloseButton = styled.button`
     right: 10px;
     font-size: 16px;
     margin-top: 650px;
-    margin-right: 5px;
+    margin-right: 140px;
   }
 `;
 
