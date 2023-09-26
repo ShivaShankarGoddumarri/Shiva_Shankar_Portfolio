@@ -27,7 +27,7 @@ text-overflow: ellipsis;
 `
 
 const Branch = styled.div`
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_secondary + 80};
    
@@ -130,7 +130,7 @@ const Card = styled.div`
     &:hover {
 
     ${Branch} {
-        color: white;
+        
     }
     ${GearIcon1}{
             transform: scale(1.2) rotate(360deg);

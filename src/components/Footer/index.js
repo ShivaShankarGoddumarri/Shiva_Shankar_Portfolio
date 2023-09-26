@@ -30,12 +30,6 @@ const Logo = styled.h1`
   font-size: 30px;
   color: ${({ theme }) => theme.primary};
   transition: color 0.8s ease-in-out; /* Smooth color transition on hover */
-
-  &:hover {
-    color: white;
-    
-   
-  }
    @media (max-width: 960px) {
     justify-content: center;
     padding: 0 0px;
