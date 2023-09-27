@@ -65,11 +65,16 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillTitle = styled.h2`
-  font-size: 24px; 
+  font-size: 26px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 16px
+  margin-bottom: 16px;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 25px; 
+    text-align: center;
+   
+  }
 `;
 
 const spinInAnimation = keyframes`
