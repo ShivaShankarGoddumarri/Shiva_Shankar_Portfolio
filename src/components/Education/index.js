@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
 import { education } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
-
-
 
 const Container = styled.div`
     display: flex;
@@ -22,27 +18,23 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: row; /* Changed from column to row for image placement */
+    flex-direction: row; 
     width: 100%;
     max-width: 1350px;
-   /* Adjusted padding for image placement */
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
-        align-items: center; /* Center content vertically on smaller screens */
+        align-items: center;
     }
 `;
 
-
-
 const EducationWrapper = styled.div`
-    flex: 2; /* Added flex property to take up available space */
+    flex: 2; 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 `;
-
 
 const Title = styled.div`
     font-size: 42px;
@@ -56,8 +48,6 @@ const Title = styled.div`
         font-size: 32px;
     }
 `;
-
-
 
 const index = () => {
     return (
@@ -74,6 +64,4 @@ const index = () => {
         </Container>
     );
 };
-
-
 export default index;

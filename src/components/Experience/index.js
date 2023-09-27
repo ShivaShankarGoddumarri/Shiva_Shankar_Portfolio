@@ -1,7 +1,5 @@
-
 import React from 'react'
 import styled from 'styled-components'
-
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 
@@ -48,12 +46,6 @@ padding: 5px 0 60px 0;
   }
 `;
 
-
-
-
-
-
-
 const index = () => {
     return (
         <Container id="experience">
@@ -67,5 +59,4 @@ const index = () => {
         </Container>
     )
 }
-
 export default index

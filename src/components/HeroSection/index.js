@@ -35,19 +35,17 @@ const BlurOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-  z-index: 9998; /* Make sure it's below the modal but above the content */
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px);
+  z-index: 9998; 
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s, visibility 2s;
-
   &.open {
     animation: ${slideInFromBottom} 1s ease-in-out;
     opacity: 1;
     visibility: visible;
   }
-
   &.close {
     animation: ${slideOutToTop} 3s ease-in-out;
     opacity: 0;
@@ -69,19 +67,16 @@ const ResumeModalContainer = styled.div`
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s, visibility 2s;
-
   &.open {
     animation: ${slideInFromBottom} 1s ease-in-out;
     opacity: 1;
     visibility: visible;
   }
-
   &.close {
     animation: ${slideOutToTop} 3s ease-in-out;
     opacity: 0;
     visibility: hidden;
   }
-
   @media (max-width: 768px) {
     width: 100%;
     padding: 15px;
@@ -99,7 +94,6 @@ const ResumeModalContent = styled.div`
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: relative;
-
   @media (max-width: 768px) {
     max-width: 100%;
     max-height: 100%;
@@ -114,7 +108,6 @@ const ResumeModalImage = styled.img`
   display: block;
   margin: 0 auto;
   object-fit: contain;
-
   @media (max-width: 768px) {
     max-width: 100%;
     max-height: 100%;
@@ -141,7 +134,6 @@ const CloseButton = styled.button`
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000px;
-
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
@@ -236,5 +228,4 @@ const HeroSection = () => {
     </div>
   );
 };
-
 export default HeroSection;

@@ -4,15 +4,12 @@ import { Container, Wrapper, Title, CardContainer, ToggleButtonGroup, ToggleButt
 import ProjectCard from '../Cards/ProjectCards';
 import { projects } from '../../data/constants';
 
-
-
 const Projects = ({openModal,setOpenModal}) => {
   const [toggle, setToggle] = useState('all');
   return (
     <Container id="projects">
       <Wrapper>
         <Title>PROJECTS</Title>
-        
         <ToggleButtonGroup >
           {toggle === 'all' ?
             <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
@@ -32,7 +29,6 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="Self Core Projects" onClick={() => setToggle('Self Core Projects')}>Self Core Projects</ToggleButton>
           }
           
-          
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === 'all' && projects
@@ -44,7 +40,6 @@ const Projects = ({openModal,setOpenModal}) => {
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
-           
         </CardContainer>
       </Wrapper>
     </Container>

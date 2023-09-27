@@ -360,7 +360,5 @@ const HeroBgAnimation = () => (
       </defs>
     </svg>
   </Div>
-  
 );
-
 export default HeroBgAnimation;

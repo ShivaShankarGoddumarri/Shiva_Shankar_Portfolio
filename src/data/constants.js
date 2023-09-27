@@ -1,16 +1,13 @@
 export const Bio = {
   name: "Shiva Shankar",
   roles: [
-    "Frontend Developer ",
+    "Front-end Developer ",
     "Graphic Designer ",
     "Product Designer ",
-    "Software Engineer "
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges with a passion for learning. Iam dedicated to delivering high-quality results with a positive attitude and a growth mindset, Iam ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/ShivaShankarGoddumarri",
-
-  
 };
 
 export const skills = [
@@ -27,11 +24,13 @@ export const skills = [
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
+
       {
         name: "CSS",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
+
       {
         name: "JavaScript",
         image:
@@ -64,8 +63,6 @@ export const skills = [
     ],
   },
 
-  
-
 {
   title: "Core Electronics",
   skills: [
@@ -74,6 +71,7 @@ export const skills = [
       image:
         "https://cdn-icons-png.flaticon.com/128/3852/3852813.png",
     },
+
     {
       name: "Embedded Systems",
       image:
@@ -89,13 +87,9 @@ export const skills = [
   ],
   },
 
- 
-
     {
       title: "Microsoft Office",
       skills: [
-      
-  
         {
           name: "Word",
           image:
@@ -116,9 +110,7 @@ export const skills = [
       
       ],
       },
-  
-  
-  
+
   {
     title: "Creative Design",
     skills: [
@@ -143,8 +135,6 @@ export const skills = [
     ],
   },
 ];
-
-
 
 export const experiences = [
   {
@@ -194,7 +184,6 @@ export const education = [
   },
 ];
 
-
 export const projects = [
   {
     id: 0,
@@ -208,7 +197,6 @@ export const projects = [
       "HTML",
       "CSS",
       "SCSS",
-      
     ],
     category: "web app",
     github: "https://github.com/ShivaShankarGoddumarri/Enigma-2k22",
@@ -249,8 +237,4 @@ export const projects = [
     github: "https://github.com/ShivaShankarGoddumarri/Amazon-Clone",
     webapp: "https://amazon-clone-pi-ten.vercel.app/",
   },
-
-
-
- 
 ];

@@ -1,10 +1,6 @@
 import React from 'react'
 import styled,{ keyframes } from 'styled-components'
 
-
-
-
-
 const Document = styled.img`
     display: none;
     height: 70px;
@@ -15,7 +11,6 @@ const Document = styled.img`
         cursor: pointer;
         opacity: 0.8;
     }
-
 `
 const Span = styled.span`
 overflow: hidden;
@@ -25,15 +20,36 @@ max-width: 100%;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `
+const Top = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px
+`
+const Body = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+`
 
-const Branch = styled.div`
-    font-size: 18px;
+
+const Name = styled.div`
+    font-size: 25px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.primary};
+    transition: all 0.4s ease-in-out;
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+`;
+
+const Degree = styled.div`
+    font-size: 25px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: white;
    
     @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
+        font-size: 12px;
+    }  
 `
 // Define a keyframes animation for spinning
 const spinInAnimation = keyframes`
@@ -83,6 +99,24 @@ const GearIcon2 = styled.img`
   }
 `;
 
+const Branch = styled.div`
+    font-size: 18px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary + 80};
+   
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }
+`
+
+const Date = styled.div`
+    font-size: 15px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_secondary + 80};
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }   
+`
 const Card = styled.div`
     width: 750px;
     border-radius: 10px;
@@ -119,83 +153,25 @@ const Card = styled.div`
     }
 
     &:hover {
-       
         transform: scale(1.05) translateY(-5px);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
         border: 0.1px solid #854CE6;
-     
-
     }
 
     &:hover {
-
-    ${Branch} {
-        
+    ${Date} {
+        color: white;
     }
     ${GearIcon1}{
             transform: scale(1.2) rotate(360deg);
-            animation: ${spinInAnimation} 1s linear alternate; 
-            
+            animation: ${spinInAnimation} 1s linear alternate;   
         }
         ${GearIcon2}{
             transform: scale(1.2) rotate(360deg);
             animation: ${spinOutAnimation} 1s linear alternate; 
-            
         }
-
     } 
 `
-
-const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
-`
-
-
-
-const Body = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-`
-
-
-const Name = styled.div`
-    font-size: 25px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.primary};
-    transition: all 0.4s ease-in-out;
-    @media only screen and (max-width: 768px) {
-        font-size: 14px;
-    }
-`;
-
-const Degree = styled.div`
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-   
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-   
-`
-
-
-const Date = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-    
-`
-
-
-
 const EducationCard = ({ education, index }) => {
   return (
       <Card>
@@ -204,7 +180,6 @@ const EducationCard = ({ education, index }) => {
                   <Name>{education.school}</Name>
                   <Degree>{education.degree}</Degree>
                   <div>
-                      
                       <Branch><GearIcon1 src="gear.png" alt="Gear Icon"  style={{ animationIterationCount: 'infinite' }} /><GearIcon2 src="gear.png" alt="Gear Icon"   style={{ animationIterationCount: 'infinite' }} />{education.branch}</Branch>
                   </div>
                   <Date>{education.date}</Date>
@@ -213,5 +188,4 @@ const EducationCard = ({ education, index }) => {
       </Card>
   );
 };
-
 export default EducationCard;

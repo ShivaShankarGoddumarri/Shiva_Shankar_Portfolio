@@ -12,7 +12,6 @@ const Document = styled.img`
         opacity: 0.8;
     }
 `
-
 const Description = styled.div`
     width: 100%;
     font-size: 15px;
@@ -23,7 +22,6 @@ const Description = styled.div`
         font-size: 10px;
     }
 `
-
 const Span = styled.span`
 overflow: hidden;
 display: -webkit-box;
@@ -32,6 +30,12 @@ max-width: 100%;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `
+const ItemWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+`
+
 const Skills = styled.div`
     width: 100%;
     display: flex;
@@ -47,8 +51,6 @@ const Skills = styled.div`
 const Skill = styled.div`
     font-size: 15px;
     font-weight: 400;
-    
-    
     color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){
         font-size: 10px;
@@ -152,19 +154,12 @@ const Top = styled.div`
     display: flex;
     gap: 12px
 `
-
-
-
-
-
 const Body = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column; 
     
 `
-
-
 const Role = styled.div`
     font-size: 24px;
     font-weight: 600;
@@ -183,7 +178,6 @@ const Company = styled.div`
     }
    
 `
-
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
@@ -192,21 +186,6 @@ const Date = styled.div`
         font-size: 10px;
     }
 `
-
-
-
-
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    
-`
-
-
-
-
-
 const ExperienceCard = ({ experience }) => {
     return (
         <Card>

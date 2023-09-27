@@ -5,8 +5,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-
-
 const FooterContainer = styled.div`
   width: 100%;
   padding: 2rem 0;
@@ -37,9 +35,6 @@ const Logo = styled.h1`
   }
 `;
 
-
-
-
 const Nav = styled.nav`
   width: 100%;
   max-width: 800px;
@@ -48,7 +43,6 @@ const Nav = styled.nav`
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
-  
   @media (max-width: 768px) {
     flex-wrap: wrap;
     gap: 1rem;
@@ -64,11 +58,9 @@ const NavLink = styled.a`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    
-    :hover {
+    &:hover {
       color: ${({ theme }) => theme.primary};
       transform: scale(1.2);
-    
   }
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -88,30 +80,25 @@ const SocialMediaIcon = styled.a`
   margin: 0 1rem;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out, transform 0.5s ease, scale 0.2s ease; /* Added transition for the spin and zoom-in effect */
+  transition: color 0.2s ease-in-out, transform 0.5s ease, scale 0.2s ease; 
   &:hover {
     color: ${({ theme }) => theme.primary};
-    transform: rotate(360deg) scale(2.5); /* Rotate the icon 360 degrees and zoom in by 20% on hover */
-    
+    transform: rotate(360deg) scale(2.5); 
   }
 `;
-
-
-
 
 function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
         <Logo>Shiva Shankar Goddumarri</Logo>
+
         <SocialMediaIcons>
-         
           <SocialMediaIcon href= "mailto:ss3177806@gmail.com" target="display"><EmailIcon/></SocialMediaIcon>
           <SocialMediaIcon href= "http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196" target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href= "https://www.instagram.com/shiva_shankar__goddumarri/" target="display"><InstagramIcon /></SocialMediaIcon>
           <SocialMediaIcon href= "tel:+91 8341943656" target="display"><PhoneIcon/></SocialMediaIcon>
           <SocialMediaIcon href= "https://wa.me/8341943656" target="display"><WhatsAppIcon /></SocialMediaIcon>
-         
         </SocialMediaIcons>
        
         <Nav>
@@ -126,5 +113,4 @@ function Footer() {
     </FooterContainer>
   );
 }
-
 export default Footer;

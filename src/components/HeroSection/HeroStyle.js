@@ -1,6 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import _default from "../../themes/default";
-
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   
@@ -15,24 +13,7 @@ export const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
-  
 `;
-
-const h1 = styled.div`
-  font-size: 42px; 
-  text-align: center;
-  font-weight: 600;
-  padding: 70px 0 20px 0;
-  margin-top: 50px; 
-  color: white; 
-
-  @media (max-width: 768px) {
-    margin-top: 20px; 
-    font-size: 24px; 
-    padding: 300px 0 0 0; 
-  }
-`;
-
 
 const spinInAnimation = keyframes`
   0% {
@@ -43,7 +24,6 @@ const spinInAnimation = keyframes`
   }
 `;
 
-
 const spinOutAnimation = keyframes`
   0% {
     transform: rotate(360deg);
@@ -52,7 +32,6 @@ const spinOutAnimation = keyframes`
     transform: rotate(0deg);
   }
 `;
-
 
 export const SocialMediaIcons = styled.div`
   display: flex;
@@ -64,8 +43,6 @@ export const SocialMediaIcons = styled.div`
   }
   
 `;
-
-
 
 // Define the keyframes for the ripple animation
 const ripple = keyframes`
@@ -90,9 +67,6 @@ export const SocialMediaIcon = styled.a`
   position: relative; /* Create a stacking context */
   transition: background-color 0.3s ease-in-out;
   
-  
-
-  /* Add a pseudo-element for the ripple effect */
   &::before {
     content: "";
     position: absolute;
@@ -106,23 +80,17 @@ export const SocialMediaIcon = styled.a`
     opacity: 1;
     transition: transform 0.5s ease, opacity 0.5s ease;
   }
-
   &:hover::before {
     animation: ${ripple} 0.5s linear;
-    
   }
-  
   &:hover {
     transform: scale(1.2) rotate(360deg); /* Scale up and rotate 360 degrees on hover */
     animation: ${spinInAnimation} 1s linear forwards; /* Apply the spin in animation */
   }
-
   &:not(:hover) {
     animation: ${spinOutAnimation} 1s linear forwards; /* Apply the spin out animation */
   }
-  
 `;
-
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -207,12 +175,10 @@ export const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
-
   @media (max-width: 768px) {
     max-width: 400px;
     max-height: 400px;
   }
-
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
@@ -227,7 +193,6 @@ export const Title = styled.div`
   @media (max-width: 960px) {
     text-align: center;
   }
-
   @media (max-width: 640px) {
     font-size: 40px;
     line-height: 48px;
@@ -273,8 +238,6 @@ export const SubTitle = styled.div`
   }
 `;
 
-
-
 export const ResumeButton = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -294,12 +257,11 @@ export const ResumeButton = styled.a`
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2),
-                -20px -20px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2),  -20px -20px 60px rgba(0, 0, 0, 0.2);
+               
     transform: translateZ(0);
     backface-visibility: hidden;
     perspective: 1000px;
-
     &:hover {
         transform: scale(1.05);
         transition: all 0.4s ease-in-out;
@@ -307,11 +269,8 @@ export const ResumeButton = styled.a`
                     -20px -20px 60px rgba(0, 0, 0, 0.4);
         background: linear-gradient(225deg, hsla(271, 100%, 60%, 1) 0%, hsla(294, 100%, 60%, 1) 100%);
         filter: brightness(1.2);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
-       
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
     }
-    
-    
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;

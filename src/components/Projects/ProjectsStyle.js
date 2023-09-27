@@ -1,18 +1,14 @@
 import styled from 'styled-components';
 import _default from '../../themes/default';
 
-
-
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-   
     z-index: 1;
     align-items: center;
-   
 `;
 
 export const Wrapper = styled.div`
@@ -65,7 +61,6 @@ export const ToggleButtonGroup = styled.div`
         font-size: 12px;
     }
 `
-
 export const ToggleButton = styled.div`
     padding: 8px 18px;
     border-radius: 6px;
@@ -87,8 +82,6 @@ export const Divider = styled.div`
     width: 1.5px;
     background: ${({ theme }) => theme.primary};
 `
-
-
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
