@@ -10,6 +10,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import styled, { keyframes } from 'styled-components';
+import { faDownload,  faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const slideInFromBottom = keyframes`
   from {
@@ -116,39 +118,67 @@ const ResumeModalImage = styled.img`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 20px; /* Move the button to the top */
-  right: -70px; /* Adjust the right position */
+  top: 10px;
+  right: -15px;
   text-decoration: none;
-  padding: 10px 20px; /* Adjust padding for a smaller button */
+  padding: 6px 14px; 
   color: ${({ theme }) => theme.white};
-  border-radius: 10px; /* Reduce border-radius for a smaller button */
+  background: transparent; 
+  border: none; 
+  border-radius: 8px; 
   cursor: pointer;
-  font-size: 14px; /* Reduce the font size */
+  font-size: 20px; 
   font-weight: 600;
   transition: all 0.3s ease-in-out !important;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2), -10px -10px 30px rgba(0, 0, 0, 0.2);
   transform: translateZ(0);
   backface-visibility: hidden;
   perspective: 1000px;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
     transition: all 0.4s ease-in-out;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 30px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(225deg, hsla(271, 100%, 60%, 1) 0%, hsla(294, 100%, 60%, 1) 100%);
-    filter: brightness(1.2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: ${({ theme }) => theme.primary};
   }
   @media (max-width: 768px) {
     right: 10px;
-    font-size: 16px;
-    margin-top: 650px;
-    margin-right: 140px;
+    font-size: 25px;
+    top: 48px;
+    z-index: 1;
   }
 `;
+
+const ResumeDownloadButton = styled.a`
+  position: absolute;
+  top: 50px;
+  right: -18px;
+  text-decoration: none;
+  padding: 6px 14px;
+  color: ${({ theme }) => theme.white};
+  border-radius: 8px; /* Reduce border-radius for a smaller button */
+  cursor: pointer;
+  font-size: 20px; /* Reduce the font size */
+  font-weight: 600;
+  transition: all 0.3s ease-in-out !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  &:hover {
+    transform: scale(1.5);
+    transition: all 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: ${({ theme }) => theme.primary};
+  }
+  @media (max-width: 768px) {
+    right: 10px;
+    font-size: 20px;
+    left: 280px;
+
+    /* Add this to ensure the download button is covered by the close button */
+    z-index: 0;
+  }
+`;
+
+
 
 const HeroSection = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
@@ -223,7 +253,10 @@ const HeroSection = () => {
         <ResumeModalContent>
           <ResumeModalImage src="Resume.jpg" alt="Resume" />
         </ResumeModalContent>
-        <CloseButton onClick={closeResumeModal}>Close</CloseButton>
+        <CloseButton onClick={closeResumeModal}>  <FontAwesomeIcon icon={faTimes} /></CloseButton>
+        <ResumeDownloadButton href="Resume.pdf" download>
+          <FontAwesomeIcon icon={faDownload} />
+          </ResumeDownloadButton>
       </ResumeModalContainer>
     </div>
   );

@@ -15,6 +15,7 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
