@@ -142,7 +142,7 @@ const CloseButton = styled.button`
   @media (max-width: 768px) {
     right: 10px;
     font-size: 25px;
-    top: 48px;
+    top: 55px;
     z-index: 1;
   }
 `;
@@ -172,8 +172,7 @@ const ResumeDownloadButton = styled.a`
     right: 10px;
     font-size: 20px;
     left: 280px;
-
-    /* Add this to ensure the download button is covered by the close button */
+    top: 55px;
     z-index: 0;
   }
 `;
@@ -254,7 +253,7 @@ const HeroSection = () => {
           <ResumeModalImage src="Resume.jpg" alt="Resume" />
         </ResumeModalContent>
         <CloseButton onClick={closeResumeModal}>  <FontAwesomeIcon icon={faTimes} /></CloseButton>
-        <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/User-Images/files/12745566/Resume.pdf" download>
+        <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/User-Images/files/12745653/Shiva_Shankar_Goddumarri_Resume.pdf" download>
           <FontAwesomeIcon icon={faDownload} />
           </ResumeDownloadButton>
       </ResumeModalContainer>
