@@ -154,9 +154,9 @@ const ResumeDownloadButton = styled.a`
   text-decoration: none;
   padding: 6px 14px;
   color: ${({ theme }) => theme.white};
-  border-radius: 8px; /* Reduce border-radius for a smaller button */
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 20px; /* Reduce the font size */
+  font-size: 20px;
   font-weight: 600;
   transition: all 0.3s ease-in-out !important;
   transform: translateZ(0);
