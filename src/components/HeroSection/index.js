@@ -254,7 +254,7 @@ const HeroSection = () => {
           <ResumeModalImage src="Resume.jpg" alt="Resume" />
         </ResumeModalContent>
         <CloseButton onClick={closeResumeModal}>  <FontAwesomeIcon icon={faTimes} /></CloseButton>
-        <ResumeDownloadButton href="/Resume.pdf" download>
+        <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/Shiva_Shankar_Portfolio/blob/96f787c359706f254f4bd6b98b5638163c71298f/public/resume.pdf" download>
           <FontAwesomeIcon icon={faDownload} />
           </ResumeDownloadButton>
       </ResumeModalContainer>
