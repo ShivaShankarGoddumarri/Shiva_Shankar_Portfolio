@@ -159,7 +159,7 @@ export const education = [
   {
     id: 0,
    
-    school: "Jawaharlal Nehru Technological University, Anantapur",
+    school: "Sri Venkateswara Institute of Technology, Anantapur",
     date: "June 2018 - July 2022",
     degree: "Bachelor of Technology",
     branch: "Electronics and Communication Engineering"
