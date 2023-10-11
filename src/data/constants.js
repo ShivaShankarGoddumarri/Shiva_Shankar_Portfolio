@@ -237,4 +237,23 @@ export const projects = [
     github: "https://github.com/ShivaShankarGoddumarri/Amazon-Clone",
     webapp: "https://amazon-clone-pi-ten.vercel.app/",
   },
+
+
+  {
+    id: 3,
+    title: "Self Core Projects",
+    description:
+      "I have included my top self core projects in this website",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/0d2e7037-07da-4b5b-a5e4-b62ae0afb299",
+    tags: [
+      "HTML",
+      "CSS",
+      "Java Script"
+    ],
+    category: "Self Core Projects",
+    github: "https://github.com/ShivaShankarGoddumarri/Self-Core-Projects",
+    webapp: "https://self-core-projects.vercel.app/",
+  },
+
 ];
