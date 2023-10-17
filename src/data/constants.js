@@ -185,23 +185,7 @@ export const education = [
 ];
 
 export const projects = [
-  {
-    id: 0,
-    title: "Enigma 2K22",
-    date: "Dec 2021 - Jan 2022",
-    description:
-      "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png",
-    tags: [
-      "HTML",
-      "CSS",
-      "SCSS",
-    ],
-    category: "web app",
-    github: "https://github.com/ShivaShankarGoddumarri/Enigma-2k22",
-    webapp: "https://enigma-2k22.vercel.app/",
-  },
+ 
   
   {
     id: 1,
@@ -245,7 +229,7 @@ export const projects = [
     description:
       "I have included my top self core projects in this website",
     image:
-      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/0d2e7037-07da-4b5b-a5e4-b62ae0afb299",
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/fa59f6d2-809b-4bc5-9543-5d324888cddb",
     tags: [
       "HTML",
       "CSS",
@@ -254,6 +238,23 @@ export const projects = [
     category: "Self Core Projects",
     github: "https://github.com/ShivaShankarGoddumarri/Self-Core-Projects",
     webapp: "https://self-core-projects.vercel.app/",
+  },
+  {
+    id: 0,
+    title: "Enigma 2K22",
+    date: "Dec 2021 - Jan 2022",
+    description:
+      "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "SCSS",
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Enigma-2k22",
+    webapp: "https://enigma-2k22.vercel.app/",
   },
 
 ];
