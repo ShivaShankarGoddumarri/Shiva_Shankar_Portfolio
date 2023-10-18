@@ -1,7 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import ExperienceCard from '../Cards/ExperienceCard';
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import { experiences } from '../../data/constants';
+import ExperienceCard from '../Cards/ExperienceCard';
 
 const Container = styled.div`
     display: flex;
@@ -46,17 +48,21 @@ padding: 5px 0 60px 0;
   }
 `;
 
-const index = () => {
+const MyComponent = () => {
+    useEffect(() => {
+      AOS.init();
+    }, []);
+  
     return (
-        <Container id="experience">
-            <Wrapper>
-                <Title>EXPERIENCE</Title>
-                        {experiences.map((experience,index) => (
-                                    <ExperienceCard experience={experience}/>
-                        ))}
-                   
-            </Wrapper>
-        </Container>
-    )
-}
-export default index
+      <Container id="experience">
+        <Wrapper  data-aos="zoom-out-up" >
+          <Title  data-aos="zoom-in-down">EXPERIENCE</Title>
+          {experiences.map((experience, index) => (
+            <ExperienceCard experience={experience} key={index} />
+          ))}
+        </Wrapper>
+      </Container>
+    );
+  };
+  
+  export default MyComponent;

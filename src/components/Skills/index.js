@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { skills } from '../../data/constants';
 import "./skills.css";
 
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react'; 
 import styled from 'styled-components';
 import { education } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos'; 
 
 const Container = styled.div`
     display: flex;
@@ -40,7 +42,8 @@ const Title = styled.div`
     font-size: 42px;
     text-align: center;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     padding: 70px 0 20px 0;
     color: white;
     @media (max-width: 768px) {
@@ -49,19 +52,48 @@ const Title = styled.div`
     }
 `;
 
-const index = () => {
+const Image = styled.img`
+  width: 500px; 
+  height: 500px;
+  margin-right: 20px;
+  @media (max-width: 768px) {
+       height: 300px;
+       width: 300px;
+       margin-bottom:20px;
+    }
+`;
+
+const Education = () => {
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        offset: 200,
+      });
+  
+      AOS.refresh();
+  
+      return () => {
+        AOS.refresh();
+      };
+    }, []);
+  
     return (
-        <Container id="education">
-        <Title>EDUCATION</Title>
-            <Wrapper >
-                <EducationWrapper>
-                   
-                    {education.map((education, index) => (
-                        <EducationCard  education={education} key={index} />
-                    ))}
-                </EducationWrapper>
-            </Wrapper>
-        </Container>
+      <Container id="education">
+        <Title data-aos="zoom-in-down">EDUCATION</Title>
+        <Wrapper>
+          <Image src="Education.png" alt="Your Image Alt Text" data-aos="fade-right" />
+          <EducationWrapper data-aos="zoom-in-left">
+            {education.map((education, index) => (
+              <EducationCard
+                education={education}
+                key={index}
+                
+              />
+            ))}
+          </EducationWrapper>
+        </Wrapper>
+      </Container>
     );
-};
-export default index;
+  };
+  
+  export default Education;

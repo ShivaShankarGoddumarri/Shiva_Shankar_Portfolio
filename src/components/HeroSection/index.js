@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import HeroBgAnimation from '../HeroBgAnimation';
 import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, SocialMediaIcons, SocialMediaIcon, ResumeButton } from './HeroStyle';
 import HeroImg from '../../images/HeroImage.jpg';
@@ -12,6 +12,9 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import styled, { keyframes } from 'styled-components';
 import { faDownload,  faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const slideInFromBottom = keyframes`
   from {
@@ -189,7 +192,11 @@ const HeroSection = () => {
   const closeResumeModal = () => {
     setIsResumeModalOpen(false);
   };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []); 
   return (
     <div id="about" style={{ height: '100vh' }}>
       <h1>ABOUT</h1>
@@ -198,11 +205,11 @@ const HeroSection = () => {
           <HeroBgAnimation />
         </HeroBg>
         <HeroInnerContainer>
-          <HeroLeftContainer id="Left">
+          <HeroLeftContainer id="Left"  data-aos="fade-right">
             <Title>
               Hi, I am <br /> {Bio.name}
             </Title>
-            <TextLoop>
+            <TextLoop  data-aos="fade-left">
               I am a
               <Span>
                 <Typewriter
@@ -214,7 +221,7 @@ const HeroSection = () => {
                 />
               </Span>
             </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
+            <SubTitle  data-aos="fade-left">{Bio.description}</SubTitle>
             <SocialMediaIcons>
               <SocialMediaIcon href="mailto:ss3177806@gmail.com" target="display">
                 <EmailIcon />
@@ -238,10 +245,10 @@ const HeroSection = () => {
                 <WhatsAppIcon />
               </SocialMediaIcon>
             </SocialMediaIcons>
-            <ResumeButton onClick={openResumeModal}>Check Resume</ResumeButton>
+            <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image" />
+            <Img src={HeroImg} alt="hero-image"  data-aos="zoom-in-down"/>
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
@@ -249,7 +256,7 @@ const HeroSection = () => {
       {/* Resume Modal */}
       <BlurOverlay className={isResumeModalOpen ? 'open' : 'close'} />
       <ResumeModalContainer className={isResumeModalOpen ? 'open' : 'close'}>
-        <ResumeModalContent>
+        <ResumeModalContent >
           <ResumeModalImage src="MyResume.jpg" alt="Resume" />
         </ResumeModalContent>
         <CloseButton onClick={closeResumeModal}>  <FontAwesomeIcon icon={faTimes} /></CloseButton>

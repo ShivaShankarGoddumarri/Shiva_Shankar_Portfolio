@@ -33,7 +33,7 @@ const Body = styled.div`
 
 
 const Name = styled.div`
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     color: ${({ theme }) => theme.primary};
     transition: all 0.4s ease-in-out;
@@ -43,7 +43,7 @@ const Name = styled.div`
 `;
 
 const Degree = styled.div`
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: white;
    
@@ -53,30 +53,40 @@ const Degree = styled.div`
 `
 // Define a keyframes animation for spinning
 const spinInAnimation = keyframes`
-  0% {
+  0%, 100% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+ 
+  50% {
+    transform: rotate(270deg);
+  }
+  20%, 80% {
+    transform: rotate(180deg);
   }
 `;
+
 const spinOutAnimation = keyframes`
-  0% {
+  0%, 100% {
     transform: rotate(360deg);
   }
-  100% {
-    transform: rotate(0deg);
+  
+  50% {
+    transform: rotate(90deg);
+  }
+  20%, 80% {
+    transform: rotate(180deg);
   }
 `;
-// Styled components for styling the gear icon and defining the spin animation
+
+const cubicBezierInOut = 'cubic-bezier(0.42, 0, 0.58, 1)';
+
 const GearIcon1 = styled.img`
-  width: 30px; // Adjust the width and height as needed
-  height: 30px;
-  margin-right: 5px; // Add some spacing between the gear icon and the Branch text
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
   transition: transform 0.2s;
-  &:not(:hover) {
-    animation: ${spinInAnimation} 3s linear alternate; 
-  }
+  animation: ${spinOutAnimation} 2s ${cubicBezierInOut} backwards;
+  transform-origin: center;
   @media only screen and (max-width: 768px) {
     height: 15px;
     width: 15px;
@@ -84,33 +94,34 @@ const GearIcon1 = styled.img`
 `;
 
 const GearIcon2 = styled.img`
-  width: 20px; // Adjust the width and height as needed
+  width: 20px;
   height: 20px;
-  margin-right: 5px; // Add some spacing between the gear icon and the Branch text
+  margin-right: 5px;
   transition: transform 0.2s;
   margin-left: -8px;
-  
-  &:not(:hover) {
-    animation: ${spinOutAnimation} 3s linear alternate; 
-  }
+  animation: ${spinInAnimation} 2s ${cubicBezierInOut} forwards;
+  transform-origin: center;
+
   @media only screen and (max-width: 768px) {
     height: 10px;
     width: 10px;
   }
 `;
 
+
+
 const Branch = styled.div`
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_secondary + 80};
-   
+  
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
 `
 
 const Date = styled.div`
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 80};
     @media only screen and (max-width: 768px){
@@ -118,7 +129,7 @@ const Date = styled.div`
     }   
 `
 const Card = styled.div`
-    width: 750px;
+    width: 730px;
     border-radius: 10px;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     padding: 12px 16px;
@@ -150,26 +161,20 @@ const Card = styled.div`
         overflow: visible;
         -webkit-line-clamp: unset;
         
+        
     }
 
     &:hover {
         transform: scale(1.05) translateY(-5px);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  
-        border: 0.1px solid #854CE6;
+        ${'' /* border: 1px solid #854CE6; */}
+        
     }
 
     &:hover {
     ${Date} {
         color: white;
     }
-    ${GearIcon1}{
-            transform: scale(1.2) rotate(360deg);
-            animation: ${spinInAnimation} 1s linear alternate;   
-        }
-        ${GearIcon2}{
-            transform: scale(1.2) rotate(360deg);
-            animation: ${spinOutAnimation} 1s linear alternate; 
-        }
     } 
 `
 const EducationCard = ({ education, index }) => {
