@@ -44,11 +44,13 @@ const Title = styled.div`
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 20px;
+    margin-right:-500px;
     padding: 70px 0 20px 0;
     color: white;
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 32px;
+        margin-right:-5px;
     }
 `;
 

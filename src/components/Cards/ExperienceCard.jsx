@@ -57,7 +57,7 @@ const Skill = styled.div`
         padding: 2px 0 0 2px;
     }
 `
-// Define a keyframes animation for spinning
+
 const spinInAnimation = keyframes`
   0% {
     transform: rotate(0deg);
@@ -67,7 +67,7 @@ const spinInAnimation = keyframes`
   }
 `;
 
-// Define a keyframes animation for spinning out
+
 const spinOutAnimation = keyframes`
   0% {
     transform: rotate(360deg);

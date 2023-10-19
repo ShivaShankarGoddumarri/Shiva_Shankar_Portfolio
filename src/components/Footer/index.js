@@ -35,22 +35,22 @@ const Logo = styled.h1`
   }
 `;
 
-const Nav = styled.nav`
-  width: 100%;
-  max-width: 800px;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-  }
-`;
+// const Nav = styled.nav`
+//   width: 100%;
+//   max-width: 800px;
+//   margin-top: 0.5rem;
+//   display: flex;
+//   flex-direction: row;
+//   gap: 2rem;
+//   justify-content: center;
+//   @media (max-width: 768px) {
+//     flex-wrap: wrap;
+//     gap: 1rem;
+//     justify-content: center;
+//     text-align: center;
+//     font-size: 12px;
+//   }
+// `;
 
 const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
@@ -89,8 +89,11 @@ const SocialMediaIcon = styled.a`
 const RightsNotice = styled.div`
   color: #fff;
   text-align: center;
-  font-size:10px;
+  font-size:14px;
   margin-top:10px;
+  @media (max-width: 768px) {
+   font-size:8px;
+  }
 `;
 
 const NoticeText = styled.p`
@@ -111,15 +114,15 @@ function Footer() {
           <SocialMediaIcon href= "https://wa.me/8341943656" target="display"><WhatsAppIcon /></SocialMediaIcon>
         </SocialMediaIcons>
        
-        <Nav>
+        {/* <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
-        </Nav>
+        </Nav> */}
         <RightsNotice>
-      <NoticeText>&copy; Portfolio Shiva Shankar Goddumarri - All Rights Reserved @ 2023</NoticeText>
+      <NoticeText>&copy; Portfolio Shiva Shankar Goddumarri - 2023 @ All Rights Reserved </NoticeText>
     </RightsNotice>
       </FooterWrapper>
     </FooterContainer>

@@ -26,6 +26,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
+    margin-bottom:30px;
     transition: all 0.5s ease-in-out;
     &:hover {
         transform: translateY(-10px);
