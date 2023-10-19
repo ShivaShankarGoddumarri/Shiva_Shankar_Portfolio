@@ -78,21 +78,21 @@ export const NavLink = styled.a`
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px; /* Increase the underline thickness */
+    height: 2px; 
     background-color: ${({ theme }) => theme.primary};
-    bottom: -4px; /* Adjust the gap between text and underline */
+    bottom: -4px; 
     left: 0;
-    transform: scaleX(0); /* Start with no underline */
+    transform: scaleX(0); 
     transform-origin: bottom;
     transition: transform 0.2s ease-in-out;
   }
 
   &:hover::after {
-    transform: scaleX(1); /* Expand the underline on hover */
+    transform: scaleX(1);
     transform-origin: bottom;
   }
   &.active::after {
-    transform: scaleX(1); /* Expand the underline for active links */
+    transform: scaleX(1); 
     transform-origin: bottom;
   }
 `;

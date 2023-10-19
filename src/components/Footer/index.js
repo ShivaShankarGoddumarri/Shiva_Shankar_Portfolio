@@ -86,6 +86,16 @@ const SocialMediaIcon = styled.a`
     transform: rotate(360deg) scale(2.5); 
   }
 `;
+const RightsNotice = styled.div`
+  color: #fff;
+  text-align: center;
+  font-size:10px;
+  margin-top:10px;
+`;
+
+const NoticeText = styled.p`
+  margin: 0;
+`;
 
 function Footer() {
   return (
@@ -108,7 +118,9 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </Nav>
-        
+        <RightsNotice>
+      <NoticeText>&copy; Portfolio Shiva Shankar Goddumarri - All Rights Reserved 2023</NoticeText>
+    </RightsNotice>
       </FooterWrapper>
     </FooterContainer>
   );
