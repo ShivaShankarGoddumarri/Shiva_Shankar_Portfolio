@@ -22,8 +22,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: row; 
     width: 100%;
-    max-width: 1350px;
+    max-width: 1200px;
     gap: 12px;
+    margin-top:50px;
     @media (max-width: 960px) {
         flex-direction: column;
         align-items: center;
@@ -36,15 +37,17 @@ const EducationWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin-top:-40px;
+    
 `;
 
 const Title = styled.div`
     font-size: 42px;
     text-align: center;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top:40px;
     margin-bottom: 20px;
-    margin-right:-500px;
+    margin-right:-600px;
     padding: 70px 0 20px 0;
     color: white;
     @media (max-width: 768px) {
@@ -58,6 +61,7 @@ const Image = styled.img`
   width: 500px; 
   height: 500px;
   margin-right: 20px;
+  margin-top:-40px;
   @media (max-width: 768px) {
        height: 300px;
        width: 300px;

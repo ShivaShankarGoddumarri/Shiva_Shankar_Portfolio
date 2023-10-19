@@ -18,9 +18,10 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
+    max-width: 1250px;
     padding: 10px 0px 100px 0;
     gap: 12px;
+    margin-top:100px;
     @media (max-width: 960px) {
         flex-direction: column;
     }
@@ -30,7 +31,7 @@ export const Title = styled.div`
 font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 80px;
+margin-top: 40px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;
