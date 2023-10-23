@@ -100,6 +100,8 @@ const NoticeText = styled.p`
   margin: 0;
 `;
 
+
+
 function Footer() {
   return (
     <FooterContainer>
@@ -122,7 +124,7 @@ function Footer() {
           <NavLink href="#education">Education</NavLink>
         </Nav> */}
         <RightsNotice>
-      <NoticeText>&copy; Shiva Shankar Goddumarri @ 2023, All Rights Reserved </NoticeText>
+      <NoticeText>&copy; 2023 | Shiva Shankar Goddumarri | All Rights Reserved </NoticeText>
     </RightsNotice>
       </FooterWrapper>
     </FooterContainer>
