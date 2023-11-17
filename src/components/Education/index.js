@@ -28,6 +28,7 @@ const Wrapper = styled.div`
     @media (max-width: 960px) {
         flex-direction: column;
         align-items: center;
+        
     }
 `;
 
@@ -65,7 +66,7 @@ const Image = styled.img`
   @media (max-width: 768px) {
        height: 300px;
        width: 300px;
-       margin-bottom:20px;
+       margin-bottom:40px;
     }
 `;
 
