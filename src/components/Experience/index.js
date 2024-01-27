@@ -58,7 +58,7 @@ const LeftContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:-180px;
+    margin-top:-100px;
     
     @media (max-width: 960px) {
         flex: 0;
@@ -72,7 +72,7 @@ const Image = styled.img`
       max-width: 80%;
     max-height: 80%;
     margin-bottom:10px;
-    margin-top:240px;
+    margin-top:150px;
     }
 `;
 
@@ -83,7 +83,7 @@ const RightContainer = styled.div`
     align-items: center;
     gap: 12px;
     margin-right: 120px;
-    margin-top:-80px;
+    margin-top:-10px;
     
     @media (max-width: 960px) {
         margin: 0;

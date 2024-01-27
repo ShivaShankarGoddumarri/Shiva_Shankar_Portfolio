@@ -124,7 +124,7 @@ function Footer() {
           <NavLink href="#education">Education</NavLink>
         </Nav> */}
         <RightsNotice>
-      <NoticeText>&copy; 2023 | Shiva Shankar Goddumarri | All Rights Reserved </NoticeText>
+      <NoticeText>Copyright &copy; 2024 | Shiva Shankar Goddumarri | All Rights Reserved </NoticeText>
     </RightsNotice>
       </FooterWrapper>
     </FooterContainer>

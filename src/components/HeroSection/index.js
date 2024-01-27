@@ -257,10 +257,10 @@ const HeroSection = () => {
       <BlurOverlay className={isResumeModalOpen ? 'open' : 'close'} />
       <ResumeModalContainer className={isResumeModalOpen ? 'open' : 'close'}>
         <ResumeModalContent >
-          <ResumeModalImage src="MyResume.jpg" alt="Resume" />
+          <ResumeModalImage src="Shiva Shankar Goddumarri_Resume.jpg" alt="Resume" />
         </ResumeModalContent>
         <CloseButton onClick={closeResumeModal}>  <FontAwesomeIcon icon={faTimes} /></CloseButton>
-        <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/User-Images/files/12892780/Shiva.Shankar.Goddumarri.pdf" download>
+        <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/User-Images/blob/main/Shiva%20Shankar%20Goddumarri_Resume.pdf" download>
           <FontAwesomeIcon icon={faDownload} />
           </ResumeDownloadButton>
       </ResumeModalContainer>

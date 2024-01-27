@@ -1,7 +1,7 @@
 export const Bio = {
   name: "Shiva Shankar",
   roles: [
-    "Front-end Developer ",
+    "Frontend Developer ",
     "Graphic Designer ",
     "Product Designer ",
   ],
@@ -52,7 +52,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://tse1.mm.bing.net/th?id=OIP.CSOa8Mk8jL35E1_02q2spAAAAA&pid=Api&P=0&h=180",
       },
       {
         name: "GitHub",
@@ -123,13 +123,13 @@ export const skills = [
       {
         name: "Picsart",
         image:
-          "https://th.bing.com/th/id/OIP.7Fitmp4DVmB06_F10URWiwAAAA?pid=ImgDet&rs=1",
+          "https://play-lh.googleusercontent.com/hexunszQESgaMxZdfuGvYdNnS6fRebRqW5lECqadoqlTL3fbJbLL6NKceHlQ58ALXcE",
       },
 
       {
         name: "Kinemaster",
         image:
-          "https://xoyxoy.com/uploads/2022/11/kinemaster-video-editor-icon.jpg",
+          "https://cdn141.picsart.com/009b40e9-5c90-4dcc-8171-6ff04d177c95/392124013016211.png",
       },
       
     ],
@@ -138,11 +138,27 @@ export const skills = [
 
 export const experiences = [
   {
+    id: 1,
+    img: "/BeyInc-logo.png",
+    role: "Frontend Web Developer",
+    company: "BeyInc",
+    date: "Dec 2023 - Present",
+    desc: "Domain : Web Development",
+  
+    skills: [
+      "Javascript",
+      "React",
+      "Material UI",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C4D0BAQF-RIoeeMTMKQ/company-logo_200_200/0/1664197008219/hcltech_logo?e=1702512000&v=beta&t=3id7DIc28CGoRdIlAr9jaMEh4v100-dYv3ozQb2ePuM",
+    img: "https://tse4.mm.bing.net/th?id=OIP.uv1WkNpW_1mjufoqDIaQrwAAAA&pid=Api&P=0&h=180",
     role: "Graduate Engineer Trainee",
     company: "HCL Technologies",
-    date: "Oct 2022 - May 2023",
+    date: "Aug 2022 - Aug 2023",
     desc: "Domain : ERS-MMT-Transportation-AUTO-GBL_OEM",
   
     skills: [
@@ -159,7 +175,7 @@ export const education = [
   {
     id: 0,
    
-    school: "Sri Venkateswara Institute of Technology, Anantapur",
+    school: "Jawaharlal Nehru Technological University, Anantapur",
     date: "June 2018 - July 2022",
     degree: "Bachelor of Technology",
     branch: "Electronics and Communication Engineering"
@@ -246,7 +262,7 @@ export const projects = [
     description:
       "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
     image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png",
+      "https://private-user-images.githubusercontent.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYzNDEyNDUsIm5iZiI6MTcwNjM0MDk0NSwicGF0aCI6Ii85NjU2NTMxNi8yNjgyMTA3NDUtZmZiZmZkOWQtZjY0NS00MzBkLTg5YjgtNTEwMDczZjk4Yzk3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI3VDA3MzU0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYzNDVkN2RmZjFmMjA1ZTY5ZWY2ZjEzOTkwNDNhN2EyNDhjZmYyOGEzODBlMThkMjE0MmVhMDQzMmQ4OWJkZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.71-1_kPXxkP1Dus9cfMa5XSniyiJWuqqytK88-TLojU",
     tags: [
       "HTML",
       "CSS",
