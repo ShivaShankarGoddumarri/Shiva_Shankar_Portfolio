@@ -205,11 +205,11 @@ const HeroSection = () => {
           <HeroBgAnimation />
         </HeroBg>
         <HeroInnerContainer>
-          <HeroLeftContainer id="Left"  data-aos="fade-right">
+          <HeroLeftContainer id="Left" >
             <Title>
               Hi, I am <br /> {Bio.name}
             </Title>
-            <TextLoop  data-aos="fade-left">
+            <TextLoop >
               I am a
               <Span>
                 <Typewriter
@@ -221,7 +221,7 @@ const HeroSection = () => {
                 />
               </Span>
             </TextLoop>
-            <SubTitle  data-aos="fade-left">{Bio.description}</SubTitle>
+            <SubTitle  >{Bio.description}</SubTitle>
             <SocialMediaIcons>
               <SocialMediaIcon href="mailto:ss3177806@gmail.com" target="display">
                 <EmailIcon />
@@ -248,7 +248,7 @@ const HeroSection = () => {
             <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image"  data-aos="zoom-in-down"/>
+            <Img src={HeroImg} alt="hero-image"/>
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

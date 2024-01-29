@@ -160,10 +160,13 @@ export const HeroRightContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    width: 150px;
+    margin-top: -70px;
   }
 
   @media (max-width: 640px) {
     margin-bottom: 30px;
+   
   }
 `;
 
@@ -182,7 +185,8 @@ export const Img = styled.img`
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
-  }
+ 
+;  }
 `;
 
 export const Title = styled.div`
@@ -194,7 +198,7 @@ export const Title = styled.div`
     text-align: center;
   }
   @media (max-width: 640px) {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
     margin-bottom: 8px;
   }

@@ -9,6 +9,10 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
+    @media (max-width: 960px) {
+     margin-top: -100px;
+    
+    }
 `;
 
 export const Wrapper = styled.div`

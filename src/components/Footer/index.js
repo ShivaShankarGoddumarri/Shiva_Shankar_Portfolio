@@ -31,7 +31,7 @@ const Logo = styled.h1`
    @media (max-width: 960px) {
     justify-content: center;
     padding: 0 0px;
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 
