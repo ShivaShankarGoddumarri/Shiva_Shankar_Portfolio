@@ -1,9 +1,10 @@
 export const Bio = {
   name: "Shiva Shankar",
   roles: [
-    "Frontend Developer ",
+    "Frontend Web Developer ",
     "Graphic Designer ",
     "Product Designer ",
+    "Electronics Engineer"
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges with a passion for learning. Iam dedicated to delivering high-quality results with a positive attitude and a growth mindset, Iam ready to make a meaningful contribution and achieve great things.",
@@ -262,7 +263,7 @@ export const projects = [
     description:
       "Enigma-2k22 is a web application designed to streamline Registration management and enhance productivity for the departmental fest. It provides a user-friendly interface for students to register for the events and fest related posters and designs.",
     image:
-      "https://private-user-images.githubusercontent.com/96565316/268210745-ffbffd9d-f645-430d-89b8-510073f98c97.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYzNDEyNDUsIm5iZiI6MTcwNjM0MDk0NSwicGF0aCI6Ii85NjU2NTMxNi8yNjgyMTA3NDUtZmZiZmZkOWQtZjY0NS00MzBkLTg5YjgtNTEwMDczZjk4Yzk3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI3VDA3MzU0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYzNDVkN2RmZjFmMjA1ZTY5ZWY2ZjEzOTkwNDNhN2EyNDhjZmYyOGEzODBlMThkMjE0MmVhMDQzMmQ4OWJkZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.71-1_kPXxkP1Dus9cfMa5XSniyiJWuqqytK88-TLojU",
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/ffbffd9d-f645-430d-89b8-510073f98c97",
     tags: [
       "HTML",
       "CSS",
