@@ -40,7 +40,7 @@ const Title = styled.div`
   margin-top: 70px; 
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
-    margin-top: -170px; 
+    margin-top: -150px; 
     font-size: 32px; 
     padding: 300px 0 0 0;
   }
