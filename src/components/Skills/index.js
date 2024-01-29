@@ -14,7 +14,7 @@ const Container = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
     padding: 150px 0 0 0; 
-    margin-top: -190px;
+    ${'' /* margin-top: -190px; */}
   }
 `;
 
@@ -40,7 +40,7 @@ const Title = styled.div`
   margin-top: 70px; 
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
-    margin-top: -20px; 
+    margin-top: -170px; 
     font-size: 32px; 
     padding: 300px 0 0 0;
   }
