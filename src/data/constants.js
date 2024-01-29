@@ -139,7 +139,7 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
-    img: "/BeyInc-logo.png",
+    img: "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/95a8dd23-b733-4e67-b6f6-d801c3d0604d",
     role: "Frontend Web Developer",
     company: "BeyInc",
     date: "Dec 2023 - Present",
