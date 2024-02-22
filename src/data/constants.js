@@ -3,6 +3,7 @@ export const Bio = {
   roles: [
     "Frontend Developer ",
     "Graphic Designer ",
+    "UI/UX Designer",
     "Product Designer ",
     "Electronics Engineer"
   ],
@@ -42,6 +43,13 @@ export const skills = [
         name: "Material UI",
         image:
           "data:image/png;base64,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",
+      },
+
+
+      {
+        name: "Redux",
+        image:
+          "https://th.bing.com/th/id/R.8251fe76d7487a28b07603515b300964?rik=H7lrBp652zDaWg&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f5848309bcef1014c0b5e4a9a.png&ehk=N%2fi7UuvK4YyoLcxusdDEWeftPaGIfNJl2VmpTOtLt%2bA%3d&risl=&pid=ImgRaw&r=0",
       },
 
       {
@@ -152,6 +160,7 @@ export const experiences = [
       "Material UI",
       "HTML",
       "CSS",
+      "Redux",
     ],
   },
   {
@@ -204,6 +213,51 @@ export const education = [
 export const projects = [
  
   
+
+
+
+  {
+    id: 6,
+    title: "Portfolio",
+    date: "September 2023",
+    description:
+      "Portfolio is a web application and mobile app  which showcase all about my skills , experience , education and my projects",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/1b431e7c-23d1-4181-8a80-3e66778521c6",
+    tags: [
+      "HTML",
+      "CSS",
+      "Java Script",
+      "React",
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/Shiva_Shankar_Portfolio.git",
+    webapp: "https://shiva-shankar-portfolio.vercel.app/",
+  },
+
+  {
+    id: 0,
+    title: "ChatHub",
+    date: "November 2023",
+    description:
+      "ChatHub is a web application and mobile app  loggedin users can make conversations based on friend requests like whatsapp and instagram also they can share images and files",
+    image:
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/8e0bfa00-147e-46f0-b169-c2b5e729f568",
+    tags: [
+      "HTML",
+      "CSS",
+      "Java Script",
+      "React",
+      "MUI",
+      "Redux"
+    ],
+    category: "web app",
+    github: "https://github.com/ShivaShankarGoddumarri/ChatHub_Frontend.git",
+    webapp: "https://chathub-ruddy.vercel.app/",
+  },
+
+
+
   {
     id: 1,
     title: "Dr. Medicine",
@@ -213,6 +267,7 @@ export const projects = [
     image:
       "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/a65797ce-63e4-485a-84a9-04172f29085d",
     tags: [
+      "React",
       "HTML",
       "CSS",
       "Java Script"
@@ -248,6 +303,7 @@ export const projects = [
     image:
       "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/fa59f6d2-809b-4bc5-9543-5d324888cddb",
     tags: [
+      "React",
       "HTML",
       "CSS",
       "Java Script"
@@ -257,7 +313,7 @@ export const projects = [
     webapp: "https://self-core-projects.vercel.app/",
   },
   {
-    id: 0,
+    id: 4,
     title: "Enigma 2K22",
     date: "Dec 2021 - Jan 2022",
     description:
