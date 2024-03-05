@@ -2,7 +2,7 @@
     "name": "Shiva Shankar Portfolio",
     "short_name": "Shiva's Portfolio",
     "description": "The Portfolio of Shiva Shankar Goddumarri",
-    "start_url": "Shiva.mp4",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#007bff",

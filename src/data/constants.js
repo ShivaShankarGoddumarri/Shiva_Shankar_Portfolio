@@ -211,11 +211,6 @@ export const education = [
 ];
 
 export const projects = [
- 
-  
-
-
-
   {
     id: 6,
     title: "Portfolio",
@@ -252,8 +247,8 @@ export const projects = [
       "Redux"
     ],
     category: "web app",
-    github: "https://github.com/ShivaShankarGoddumarri/ChatHub_Frontend.git",
-    webapp: "https://chathub-ruddy.vercel.app/",
+    github: "https://github.com/ShivaShankarGoddumarri/ChatHub_Frontend",
+    webapp: "https://chathub-eta.vercel.app/",
   },
 
 
