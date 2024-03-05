@@ -245,7 +245,8 @@ const HeroSection = () => {
                 <WhatsAppIcon />
               </SocialMediaIcon>
             </SocialMediaIcons>
-            <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton>
+            {/* <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton> */}
+            <ResumeButton href="https://wa.me/8341943656">Connect</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
             <Img src={HeroImg} alt="hero-image"/>
@@ -254,7 +255,7 @@ const HeroSection = () => {
       </HeroContainer>
 
       {/* Resume Modal */}
-      <BlurOverlay className={isResumeModalOpen ? 'open' : 'close'} />
+      {/* <BlurOverlay className={isResumeModalOpen ? 'open' : 'close'} />
       <ResumeModalContainer className={isResumeModalOpen ? 'open' : 'close'}>
         <ResumeModalContent >
           <ResumeModalImage src="Shiva Shankar Goddumarri_Resume.png" alt="Resume" />
@@ -263,7 +264,7 @@ const HeroSection = () => {
         <ResumeDownloadButton href="https://github.com/ShivaShankarGoddumarri/User-Images/blob/main/Shiva%20Shankar%20Goddumarri_Resume.pdf" download>
           <FontAwesomeIcon icon={faDownload} />
           </ResumeDownloadButton>
-      </ResumeModalContainer>
+      </ResumeModalContainer> */}
     </div>
   );
 };
