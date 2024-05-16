@@ -165,21 +165,21 @@ export const experiences = [
       "GitHub"
     ],
   },
-  // {
-  //   id: 0,
-  //   img: "https://tse4.mm.bing.net/th?id=OIP.uv1WkNpW_1mjufoqDIaQrwAAAA&pid=Api&P=0&h=180",
-  //   role: "Graduate Engineer Trainee",
-  //   company: "HCL Technologies",
-  //   date: "Aug 2022 - Aug 2023",
-  //   desc: "Domain : ERS-MMT-Transportation-AUTO-GBL_OEM",
+  {
+    id: 0,
+    img: "https://tse4.mm.bing.net/th?id=OIP.uv1WkNpW_1mjufoqDIaQrwAAAA&pid=Api&P=0&h=180",
+    role: "Graduate Engineer Trainee",
+    company: "HCL Technologies",
+    date: "Aug 2022 - Aug 2023",
+    desc: "Domain : ERS-MMT-Transportation-AUTO-GBL_OEM",
   
-  //   skills: [
-  //     "C Programming",
-  //     "Embedded Systems",
-  //     "Control Area Networks",
-  //     "UDS",
-  //   ],
-  // },
+    skills: [
+      "C Programming",
+      "Embedded Systems",
+      "Control Area Networks",
+      "UDS",
+    ],
+  },
   
 ];
 
