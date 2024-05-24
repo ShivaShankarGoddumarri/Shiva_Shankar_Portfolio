@@ -232,28 +232,47 @@ export const projects = [
     webapp: "https://shiva-shankar-portfolio.vercel.app/",
   },
 
+  // {
+  //   id: 0,
+  //   title: "ChatHub",
+  //   date: "November 2023",
+  //   description:
+  //     "ChatHub is a web application and mobile app  loggedin users can make conversations based on friend requests like whatsapp and instagram also they can share images and files",
+  //   image:
+  //     "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/8e0bfa00-147e-46f0-b169-c2b5e729f568",
+  //   tags: [
+  //     "HTML",
+  //     "CSS",
+  //     "Java Script",
+  //     "React",
+  //     "MUI",
+  //     "Redux"
+  //   ],
+  //   category: "web app",
+  //   github: "https://github.com/ShivaShankarGoddumarri/ChatHub_Frontend",
+  //   webapp: "https://chathub-eta.vercel.app/",
+  // },
+
   {
     id: 0,
-    title: "ChatHub",
-    date: "November 2023",
+    title: "BeyInc",
+    date: "December 2023 - Present",
     description:
-      "ChatHub is a web application and mobile app  loggedin users can make conversations based on friend requests like whatsapp and instagram also they can share images and files",
+      "This project is an innovative social media platform designed to facilitate connections between entrepreneurs, mentors, and investors. This platform aims to nurture startup ideas by providing a collaborative space where entrepreneurs can seek guidance, share their visions, and secure investment opportunities. By bridging the gap between startup enthusiasts and seasoned professionals, our platform fosters an environment conducive to business growth and innovation.",
     image:
-      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/8e0bfa00-147e-46f0-b169-c2b5e729f568",
+      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/0dceca9a-3d50-433d-ba7e-634ff5f828f7",
     tags: [
       "HTML",
       "CSS",
       "Java Script",
       "React",
-      "MUI",
-      "Redux"
+      "Redux",
+      "Material UI",
     ],
     category: "web app",
-    github: "https://github.com/ShivaShankarGoddumarri/ChatHub_Frontend",
-    webapp: "https://chathub-eta.vercel.app/",
+    github: "",
+    webapp: "https://www.beyinc.org/",
   },
-
-
 
   {
     id: 1,
