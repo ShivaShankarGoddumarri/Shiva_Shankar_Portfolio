@@ -227,7 +227,7 @@ const HeroSection = () => {
                 <EmailIcon />
               </SocialMediaIcon>
               <SocialMediaIcon href="tel:+91 8341943656" target="display">
-                <PhoneIcon />
+                
               </SocialMediaIcon>
               <SocialMediaIcon
                 href="http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196"
@@ -242,7 +242,7 @@ const HeroSection = () => {
                 <InstagramIcon />
               </SocialMediaIcon>
               <SocialMediaIcon href="https://wa.me/8341943656" target="display">
-                <WhatsAppIcon />
+                
               </SocialMediaIcon>
             </SocialMediaIcons>
             {/* <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton> */}
