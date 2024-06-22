@@ -1,4 +1,3 @@
-
 import HeroBgAnimation from '../HeroBgAnimation';
 import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, SocialMediaIcons, SocialMediaIcon, ResumeButton } from './HeroStyle';
 import HeroImg from '../../images/HeroImage.png';
@@ -226,7 +225,9 @@ const HeroSection = () => {
               <SocialMediaIcon href="mailto:ss3177806@gmail.com" target="display">
                 <EmailIcon />
               </SocialMediaIcon>
-              
+              <SocialMediaIcon href="tel:+91 0123456789" target="display">
+                <PhoneIcon />
+              </SocialMediaIcon>
               <SocialMediaIcon
                 href="http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196"
                 target="display"
@@ -239,10 +240,12 @@ const HeroSection = () => {
               >
                 <InstagramIcon />
               </SocialMediaIcon>
-             
+              <SocialMediaIcon href="https://wa.me/0123456789" target="display">
+                <WhatsAppIcon />
+              </SocialMediaIcon>
             </SocialMediaIcons>
             {/* <ResumeButton  onClick={openResumeModal}  >Check Resume</ResumeButton> */}
-            <ResumeButton href="https://wa.me/8341943656">Connect</ResumeButton>
+            <ResumeButton href="https://wa.me/0123456789">Connect</ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
             <Img src={HeroImg} alt="hero-image"/>
