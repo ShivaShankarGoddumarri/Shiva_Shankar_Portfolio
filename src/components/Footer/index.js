@@ -110,7 +110,9 @@ function Footer() {
 
         <SocialMediaIcons>
           <SocialMediaIcon href= "mailto:ss3177806@gmail.com" target="display"><EmailIcon/></SocialMediaIcon>
+
           <SocialMediaIcon href= "http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196" target="display"><LinkedInIcon /></SocialMediaIcon>
+
           <SocialMediaIcon href= "https://www.instagram.com/shiva_shankar__goddumarri/" target="display"><InstagramIcon /></SocialMediaIcon>
  
         {/* <Nav>
